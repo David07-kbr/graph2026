@@ -1,6 +1,6 @@
 /**
  * @file include/levit.hpp
- * @author Anton
+ * @author David 
  *
  * Алгоритм Левита для нахождения кратчайших путей.
  */

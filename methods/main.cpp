@@ -36,7 +36,16 @@ int main(int argc, char* argv[]) {
 
   /* Сюда нужно вставить обработчик post запроса для алгоритма. */
 
+svr.Post("/levit", [](const httplib::Request& req, httplib::Response& res) {
+    // 1. Читаем JSON, который прислал клиент
+    auto input_json = nlohmann::json::parse(req.body);
 
+    // 2. Вызываем вашу функцию алгоритма Левита
+    auto output_json = graph::levit_algorithm_method(input_json);
+
+    // 3. Отправляем ответ клиенту
+    res.set_content(output_json.dump(), "application/json");
+});
 
   /* Конец вставки. */
 

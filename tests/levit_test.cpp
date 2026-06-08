@@ -1,6 +1,6 @@
 /**
  * @file tests/levit_test.cpp
- * @author Anton
+ * @author David 
  *
  * Тесты для алгоритма graph::Levit.
  */

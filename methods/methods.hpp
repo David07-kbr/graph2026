@@ -14,6 +14,7 @@ namespace graph {
 
 /* Сюда нужно вставить объявление серверной части алгоритма. */
 
+nlohmann::json levit_algorithm_method(const nlohmann::json& input_json);
 
 
 /* Конец вставки. */

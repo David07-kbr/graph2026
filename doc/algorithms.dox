@@ -6,5 +6,5 @@
 @page algorithms Алгоритмы
 
 Список реализованных алгоритмов:
-
+\subpage levit_algorithm
 */

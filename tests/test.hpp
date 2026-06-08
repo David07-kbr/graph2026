@@ -1,6 +1,6 @@
 /**
  * @file tests/test.hpp
- * @author Mikhail Lozhnikov
+ * @author David Elkanov
  *
  * Заголовочный файл для объявлений основных тестовых функций.
  */

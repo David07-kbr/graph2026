@@ -1,6 +1,6 @@
 /**
  * @file tests/main.cpp
- * @author Mikhail Lozhnikov
+ * @author David Elkanov
  *
  * Файл с функией main() для клиентской части программы (набора тестов).
  */

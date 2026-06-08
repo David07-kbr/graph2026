@@ -1,0 +1,11 @@
+/**
+ * @file doc/algorithms/levit.dox
+ * @author Давид
+ * 
+ * @page levit_algorithm Алгоритм Левита
+ * 
+ * @section levit_algorithm_algo Описание алгоритма
+ * 
+ * Алгоритм Левита находит кратчайшие пути от одной вершины графа до всех остальных.
+ * 
+ */

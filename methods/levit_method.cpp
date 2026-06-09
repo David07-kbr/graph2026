@@ -1,6 +1,6 @@
 /**
  * @file methods/levit_method.cpp
- * @author Anton
+ * @author David 
  *
  * Серверная часть алгоритма Левита.
  */

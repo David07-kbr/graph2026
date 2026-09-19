@@ -128,7 +128,7 @@ static void RandomTestHelper(httplib::Client* cli,
   const int numTries = 100;
   std::random_device rd;
   std::mt19937 gen(rd());
-  
+
   std::uniform_int_distribution<size_t> vertexId(100, 150);
   std::uniform_int_distribution<size_t> edgesSize(10, 300);
   std::uniform_real_distribution<double> weightDist(1.0, 100.0);
@@ -139,7 +139,7 @@ static void RandomTestHelper(httplib::Client* cli,
     nlohmann::json input;
 
     input["graph_type"] = graphType;
-    
+
     size_t startVertex = vertexId(gen);
     input["start_vertex"] = startVertex;
     vertices.push_back(startVertex);
@@ -165,7 +165,7 @@ static void RandomTestHelper(httplib::Client* cli,
     std::sort(vertices.begin(), vertices.end());
     vertices.erase(std::unique(vertices.begin(), vertices.end()),
         vertices.end());
-    
+
     input["vertices"] = vertices;
 
     auto res = cli->Post("/Levit", input.dump(), "application/json");
@@ -175,7 +175,7 @@ static void RandomTestHelper(httplib::Client* cli,
     }
 
     nlohmann::json output = nlohmann::json::parse(res->body);
-    
+
     /* Проверяем, что сервер ответил 200 OK и вернул хоть какой-то JSON */
     REQUIRE_EQUAL(res->status, 200);
     REQUIRE(output.contains("distances"));

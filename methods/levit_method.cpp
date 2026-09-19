@@ -37,7 +37,7 @@ int LevitMethod(const nlohmann::json& input, nlohmann::json* output) {
   }
 
   size_t start_vertex = input["start_vertex"].get<size_t>();
-  
+
   /* ИСПРАВЛЕНИЕ: Если стартовой вершины нет в графе (например, граф пустой),
      то и путей от неё быть не может. Сразу возвращаем пустые distances. */
   if (!graph_data.HasVertex(start_vertex)) {
@@ -54,7 +54,7 @@ int LevitMethod(const nlohmann::json& input, nlohmann::json* output) {
   }
 
   (*output)["distances"] = distances_json;
-  
+
   return 0;
 }
 

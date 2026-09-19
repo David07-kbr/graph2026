@@ -32,8 +32,7 @@ void TestWeightedOrientedGraph();
 
 /* Сюда нужно добавить объявления тестовых функций. */
 
-void TestLevit();
-
+void TestLevit(httplib::Client* cli);
 
 /* Конец вставки. */
 

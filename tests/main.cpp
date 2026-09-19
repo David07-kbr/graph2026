@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
   /* Сюда нужно вставить вызов набора тестов для алгоритма. */
 
 
-  TestLevit();
+  TestLevit(&cli);
 
   /* Конец вставки. */
 
